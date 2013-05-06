@@ -4,6 +4,7 @@
  */
 KISSY.add('gallery/ua-extra/1.0/index', function (S, undefined) {
     var win = window,
+    
         UA= {},
         navigator = win.navigator,
         ua = navigator && navigator.userAgent || "",

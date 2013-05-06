@@ -1,3 +1,3 @@
-/*! ua-extra - v1.1 - 2013-05-06 4:22:28 PM
+/*! ua-extra - v1.1 - 2013-05-06 4:33:19 PM
 * Copyright (c) 2013 yiminghe; Licensed  */
 KISSY.add("gallery/ua-extra/1.0/index",function(e,t){var a,r,n,o=window,h={},l=o.navigator,c=l&&l.userAgent||"",s={se360:t,maxthon:t,tt:t,theworld:t,sougou:t},u=function(e){var t=0;return parseFloat(e.replace(/\./g,function(){return 0===t++?".":""}))};if(a=c.match(/360SE/))s[n="se360"]=3;else if((a=c.match(/Maxthon/))&&(r=o.external)){n="maxthon";try{s[n]=u(r.max_version)}catch(i){s[n]=.1}}else(a=c.match(/TencentTraveler\s([\d.]*)/))?s[n="tt"]=a[1]?u(a[1]):.1:(a=c.match(/TheWorld/))?s[n="theworld"]=3:(a=c.match(/SE\s([\d.]*)/))&&(s[n="sougou"]=a[1]?u(a[1]):.1);return n&&(s.shell=n),e.mix(h,s),h});
